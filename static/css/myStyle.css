@@ -20,18 +20,19 @@ body {
   font-family: 'Germania One', cursive;
 }  
 
-nav {
-  box-shadow: 1px 1px 5px #311b92;
-}
-
 /* Calculate text size based on port */
 .text-responsive {
-  font-size: 5vw;
+  font-size: 10vw;
 }
 
 .sticky-offset { 
-  padding: 8rem 0rem 0rem 0rem; 
+  padding: 5rem 0rem 0rem 0rem; 
 } 
+
+.text-navy {
+  color: navy;
+  font-family: 'Germania One', cursive;
+}
 
  /*Header & Footer: Gradient Colors */
  .bg-grad_blue {
@@ -44,12 +45,34 @@ nav {
   background-image: linear-gradient(rgba(39, 13, 100, 0.1), rgba(0,0,255)); /* Standard syntax (must be last) */
 }
 
-.text-navy {
-  color: navy;
-  font-family: 'Germania One', cursive;
-}
 /*
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################
 Bootstrap 4 breakpoints
+*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {  
+  .text-responsive {font-size: 10vw;}
+  .sticky-offset {padding: 5rem 0rem 0rem 0rem;} 
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {  
+  .text-responsive {font-size: 8vw;}
+  .sticky-offset {padding: 6rem 0rem 0rem 0rem;} 
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .text-responsive {font-size: 8vw;} 
+  .sticky-offset {padding: 7rem 0rem 0rem 0rem;} 
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .text-responsive {font-size: 5vw;}
+  .sticky-offset {padding: 7rem 0rem 0rem 0rem;} 
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+  .text-responsive {font-size: 5vw;}
+  .sticky-offset {padding: 8rem 0rem 0rem 0rem;} 
+}
