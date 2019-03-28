@@ -1,0 +1,7 @@
+xtype,name,num,flag,label
+x,poverty,20,active,Poverty (%)
+x,age,40,inactive,Age (Median)
+x,income,60,inactive,Household Income (Median)
+y,obesity,10,inactive,Obese (%)
+y,smokes,30,inactive,Smokers (%)
+y,healthcare,50,active,Healthcare (%)
