@@ -3,70 +3,83 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Journalism</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
   <link rel="stylesheet" href="static/css/myStyle.css">
-  <link rel="stylesheet" href="static/css/d3Style.css">
+  <link rel="stylesheet" href="static/css/chartStyle.css">
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>Times</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
+  <div class="container-fluid">
+    <header>
+      <div class="bg-grad_blue fixed-top d-flex justify-content-between">
+        <a href="#">
+          <img src="static/img/data_scientist_Profile.png" class="rounded m-3" alt="Home" width="40" height="40">
+        </a>
+        <!-- Nav tabs -->
+        <div class="align-items-center w-100">
+          <h1 class="text-responsive text-center text-white">Data Journalism</h1>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-            tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-            Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-            tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-            Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-            tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-            Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </header>
+    <!-- Navigation End-->
+    <!-- <div id="fixed" class="fixed-top">
+      <a class="float-left p-2 bg-black" href="#">
+          <img src="static/img/data_scientist_Profile.png" class="rounded" alt="Home" width="40" height="40">
+      </a>
+      <div class="col-md-12 col-xs-12 jumbotron text-white text-center">
+        <h1 class="text-responsive">Data Journalism </h1>
+      </div>
+    </div> -->
+    <div id="sticky" class="sticky-offset">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">         
+          <div class="card img-fluid mb-2">
+              <img src="https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" class="rounded" alt="animated newspaper">
+              <img src=" https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" class="rounded" alt="animated newspaper">
+              <div class="card-img-overlay">
+                <h1 class="card-title text-light text-center">Times</h1>
+              </div>
+            </div>
         </div>
+
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <div class="card mb-5 shadow overflow-auto d-flex justify-content-center">
+            <div class="card-header text-navy text-center">
+              <h5>Correlations Discovered Between Health Risks Factors versus Age and Income</h5>
+              <input type="hidden" id="xId" value="poverty">
+              <input type="hidden" id="yId" value="healthcare">
+            </div>
+            <div id="scatter" class="card-body">
+              <!-- Scatter chart -->
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <!-- Footer-->
-    <div id="footer">
-      <p>The Coding Boot Camp&copy;2016</p>
+  </div>
+
+  <!-- Footer start fixed-bottom -->
+  <footer>
+    <div class="text-center text-white p-2 bg-grad_fuschia">
+      <i>© 2019 Copyright: Janie Wallace</i>
     </div>
+  </footer>
+  <!-- Footer end -->
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
   <script type="text/javascript" src="static/js/app.js"></script>
+  <!-- <script type="text/javascript" src="static/js/test.js"></script> -->
 
 </body>
 
