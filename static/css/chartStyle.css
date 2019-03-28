@@ -1,0 +1,99 @@
+.aText {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  fill: #551aaf;
+  text-anchor: middle;
+}
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  fill: #551aaf;
+}
+
+.active {
+  font-weight: bold;
+  fill: #551aaf;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: bold;
+  fill: #c9c9c9;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill:  rgb(140, 139, 141);
+  cursor: pointer;
+}
+
+/* font size dependent on radius, see app.js */
+.stateText {
+  font-family: sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.stateCircle {
+  fill: fuchsia;
+  stroke: darkorchid;
+  stroke-width: 1;
+  opacity: .75;
+}
+
+.chart {
+  display: block;
+  margin: 0;
+}
+
+.tooltip {
+  line-height: 1;
+  padding: 6px;
+  background:#551aaf;
+  color: whitesmoke;
+  text-align: left;
+  text-transform: capitalize;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.tooltip:after {
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1;
+  color: #551aaf;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* Style northward tooltips specifically */
+.tooltip.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Mobile Rules */
+@media screen and (max-width: 530px) {
+  .stateText {
+    display: none;
+  }
+
+  .aText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aText {
+    font-size: 13px;
+  }
+}
+

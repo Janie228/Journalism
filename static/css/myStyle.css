@@ -1,0 +1,55 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 1rem;
+  overflow: auto; 
+  }
+
+*, *:before, *:after { 
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; 
+ }
+   
+body {
+  background-color: #e8eaf6 ;
+  margin: 1px;
+  font-family: 'Germania One', cursive;
+}  
+
+nav {
+  box-shadow: 1px 1px 5px #311b92;
+}
+
+/* Calculate text size based on port */
+.text-responsive {
+  font-size: 5vw;
+}
+
+.sticky-offset { 
+  padding: 8rem 0rem 0rem 0rem; 
+} 
+
+ /*Header & Footer: Gradient Colors */
+ .bg-grad_blue {
+  /*background-color: rgba(0,0,255);  For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgba(39, 13, 100, 0.1), rgba(0,0,255, .9)); /* Standard syntax (must be last) */
+}
+
+.bg-grad_fuschia {
+ /*  background-color:  rgba(0,0,255); For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(39, 13, 100, 0.1), rgba(0,0,255)); /* Standard syntax (must be last) */
+}
+
+.text-navy {
+  color: navy;
+  font-family: 'Germania One', cursive;
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+Bootstrap 4 breakpoints
