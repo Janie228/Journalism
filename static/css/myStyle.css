@@ -22,7 +22,7 @@ body {
 
 /* Calculate text size based on port */
 .text-responsive {
-  font-size: 10vw;
+  font-size: 9vw;
 }
 
 .sticky-offset { 
@@ -35,14 +35,18 @@ body {
 }
 
  /*Header & Footer: Gradient Colors */
- .bg-grad_blue {
-  /*background-color: rgba(0,0,255);  For browsers that do not support gradients */
-  background-image: linear-gradient(to right, rgba(39, 13, 100, 0.1), rgba(0,0,255, .9)); /* Standard syntax (must be last) */
+.bg-grad_navy {
+  /*  background-color:  rgba(0,0,255); For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(65, 4, 248, .2), rgb(6, 4, 110, 1)); 
+ }
+
+ hr.line{
+	border-top: 2px solid #8c8b8b;
 }
 
-.bg-grad_fuschia {
- /*  background-color:  rgba(0,0,255); For browsers that do not support gradients */
-  background-image: linear-gradient(rgba(39, 13, 100, 0.1), rgba(0,0,255)); /* Standard syntax (must be last) */
+
+hr.line-double {
+	border-top: 5px double #8c8b8b;
 }
 
 /*
@@ -53,17 +57,17 @@ Bootstrap 4 breakpoints
 */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {  
-  .text-responsive {font-size: 10vw;}
-  .sticky-offset {padding: 5rem 0rem 0rem 0rem;} 
+  .text-responsive {font-size: 6vw;}
+  .sticky-offset {padding: 6rem 0rem 0rem 0rem;} 
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {  
-  .text-responsive {font-size: 8vw;}
-  .sticky-offset {padding: 6rem 0rem 0rem 0rem;} 
+  .text-responsive {font-size: 6vw;}
+  .sticky-offset {padding: 7rem 0rem 0rem 0rem;} 
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) { 
-  .text-responsive {font-size: 8vw;} 
+  .text-responsive {font-size: 6vw;} 
   .sticky-offset {padding: 7rem 0rem 0rem 0rem;} 
 }
 /* Large devices (desktops, 992px and up) */
@@ -73,6 +77,6 @@ Bootstrap 4 breakpoints
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
-  .text-responsive {font-size: 5vw;}
+  .text-responsive {font-size: 4vw;}
   .sticky-offset {padding: 8rem 0rem 0rem 0rem;} 
 }
