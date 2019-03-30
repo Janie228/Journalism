@@ -17,61 +17,103 @@
 </head>
 
 <body>
+  <!-- Header, Content, & Footer Tags -->
   <div class="container-fluid">
-    <header>
-      <div class="bg-grad_blue fixed-top d-flex justify-content-between">
-        <a href="#">
-          <img src="static/img/data_scientist_Profile.png" class="rounded m-2" alt="Home" width="40" height="40">
-        </a>
-        <!-- Nav tabs -->
-        <div class="align-items-center w-100">
-          <h1 class="text-responsive text-center text-white">Data Journalism</h1>
+    <!-------------------------------------------------------------------------- 
+      # Header Tag Hierarchy
+        *header - fixed-top
+          ~gradient background
+            ^single-line
+            ^header label
+              -profile icon
+              -header text
+          ~double-line
+     --------------------------------------------------------------------------->
+    <header class="fixed-top">
+      <div class="bg-grad_navy">
+        <div class="row">
+          <span class="col-12">
+            <hr class="line mb-n4 mx-3">
+          </span>
         </div>
-      </div>
-    </header>
-    
-    <div id="sticky" class="sticky-offset">
-      <div class="row">
-        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">         
-          <div class="card img-fluid mb-2">
-              <img src="https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" class="rounded" alt="animated newspaper">
-              <img src=" https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" class="rounded" alt="animated newspaper">
-              <div class="card-img-overlay">
-                <h1 class="card-title text-light text-center">Times</h1>
+        <!-- > -->
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between">
+              <a href="#">
+                <img src="static/img/data_scientist_Profile.png" class="rounded m-2" alt="Home" width="40" height="40">
+              </a>
+              <!-- Nav tabs -->
+              <div class="w-100">
+                <h1 class="text-responsive text-center text-white">Data Journalism</h1>
               </div>
-            </div>
-        </div>
-
-        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-          <div class="card mb-5 shadow d-flex justify-content-center overflow-auto">
-            <div class="card-header text-navy text-center">
-              <h5>Correlations Discovered Between Health Risks Factors versus Age and Income</h5>
-              <input type="hidden" id="xId" value="poverty">
-              <input type="hidden" id="yId" value="healthcare">
-            </div>
-            <div id="scatter" class="card-body">
-              <!-- Scatter chart -->
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
+      <div class="row">
+        <span class="col-12 m-1">
+          <hr class="line-double mx-3">
+        </span>
+      </div>
+    </header>
 
-  <!-- Footer start fixed-bottom -->
-  <footer>
-    <div class="text-center text-white p-2 bg-grad_fuschia">
-      <i>© 2019 Copyright: Janie Wallace</i>
-    </div>
-  </footer>
-  <!-- Footer end -->
+    <!-------------------------------------------------------------------------- 
+    # Content Tag Hierarchy
+      *1 Row
+        ~3 Col
+          ^Img Card
+        ~9 Col
+          ^Plot Card w/ header & footer - project info
+    --------------------------------------------------------------------------->
+    <content class="sticky-offset row mt-2">
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <div class="card img-shadow fluid mb-5">
+          <img src="https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" alt="animated newspaper">
+          <img src=" https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" alt="animated newspaper">
+          <div class="card-img-overlay">
+            <h1 class="card-title text-light text-center">Times</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+        <div class="card mb-5 shadow d-flex justify-content-center text-navy">
+          <div class="card-header text-center border-top-2">
+            <h4>Correlations Discovered Between Health Risk Factors versus Age and Income</h4>
+            <input type="hidden" id="xId" value="poverty">
+            <input type="hidden" id="yId" value="healthcare">
+          </div>
+          <!-- Scatter chart begins-->
+          <div id="scatter" class="card-body overflow-auto"></div>
+          <!-- Scatter chart ends-->
+          <div class="card-footer">
+            <p>
+              This project is implemented to help a major metro paper analyzing the current trends that shape people's lives, 
+              as well as creating charts, graphs, and interactive elements to help readers understand the research results.
+            </p>
+            <p>
+              The editor wants to run a series of feature stories about the health risks facing particular demographics. This project  
+              provides the first story idea by sifting through information from the 
+              <a target="_blank" href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml" title="US Census Government Website">
+                U.S. Census Bureau</a> and the Behavioral Risk Factor Surveillance System.
+                The current dataset is based on 2014 ACS 1-year estimates on rates of income, obesity, poverty, etc. by state.
+            </p>
+          </div>
+        </div>
+      </div>
+    </content>
+
+    <footer class="row">
+      <div class="col-12 text-center text-white p-1 bg-grad_navy">
+        <i>© 2019 Copyright: Janie Wallace</i>
+      </div>
+    </footer>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
   <script type="text/javascript" src="static/js/app.js"></script>
-  <!-- <script type="text/javascript" src="static/js/test.js"></script> -->
 
 </body>
 
