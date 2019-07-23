@@ -1,6 +1,7 @@
-# Unit 16 | Assignment - Data Journalism and D3
+# Data Journalism with D3.js
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
+-----
 
 ## Background
 
@@ -50,7 +51,7 @@ While the ticks on the axes allow us to infer approximate values for each circle
 
 - - -
 
-### Assessment
+## Assessment
 
 Your final product will be assessed on the following metrics:
 
@@ -63,7 +64,7 @@ Your final product will be assessed on the following metrics:
 * Professionalism
 
 **Good luck!**
+-----
 
-## Copyright
-
+### Copyright
 Data Boot Camp © 2018. All Rights Reserved.
