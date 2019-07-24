@@ -1,4 +1,4 @@
-# [Data Journalism with D3.js](https://janie228.github.io/Journalism/)
+# [Data Journalism with D3.js](https://janie228.github.io/Journalism_D3/)
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 -----
@@ -50,11 +50,11 @@ Your final product will be assessed on the following metrics:
 * Visual attraction
 * Professionalism
 
-**Good luck!**
 -----
 
 ## Results
-* The title of the project contains the link to this project's website.
+* [Click here to website](https://janie228.github.io/Journalism_D3/).
+
 -----
 ### Copyright
 Data Boot Camp © 2018. All Rights Reserved.
