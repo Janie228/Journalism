@@ -51,9 +51,11 @@ Your final product will be assessed on the following metrics:
 * Professionalism
 
 -----
+-----
 
 ## Results
 * [Click here to website](https://janie228.github.io/Journalism_D3/).
+![journalism.JPG](static/images/journalism.JPG)
 
 -----
 ### Copyright
