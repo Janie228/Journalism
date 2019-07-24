@@ -1,4 +1,4 @@
-# [Data Journalism with D3.js](https://janie228.github.io/Journalism_D3/)
+# [Data Journalism](https://janie228.github.io/Journalism_D3/)
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 -----
