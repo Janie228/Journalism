@@ -1,4 +1,5 @@
-# [Data Journalism on Demographics Health Risk Factor](https://janie228.github.io/Journalism_D3/)
+# [Data Journalism](https://janie228.github.io/Journalism_D3/)
+### Demographics Health Risk Factor Analysis
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 -----
