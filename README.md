@@ -27,7 +27,7 @@ Visual Studio Code, HTML/CSS, Bootstrap 4, D3.JS, CSV dataset
 * Clone this repo to your computer
 
 - - -
-## Requirements
+## Project Requirements
 
 ### Level 1: D3 Dabbler
 ![4-scatter](static/img/4-scatter.jpg)
