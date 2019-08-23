@@ -13,21 +13,19 @@
   <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
   <link rel="stylesheet" href="static/css/myStyle.css">
   <link rel="stylesheet" href="static/css/chartStyle.css">
-
 </head>
 
 <body>
   <!-- Header, Content, & Footer Tags -->
   <div class="container-fluid">
     <!-------------------------------------------------------------------------- 
-      # Header Tag Hierarchy
-        *header - fixed-top
-          ~gradient background
-            ^single-line
-            ^header label
-              -profile icon
-              -header text
-          ~double-line
+      # 'fixed-top' Header Tag Hierarchy 
+        ~gradient background
+          ^single-line
+          ^header label
+            -profile icon
+            -header text
+        ~double-line
      --------------------------------------------------------------------------->
     <header class="fixed-top">
       <div class="bg-grad_navy">
@@ -40,10 +38,10 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex justify-content-between">
-              <a href="#">
+              <a href="https://janie228.github.io">
                 <img src="static/img/data_scientist_Profile.png" class="rounded m-2" alt="Home" width="40" height="40">
               </a>
-              <!-- Nav tabs -->
+              <!-- Header Text -->
               <div class="w-100">
                 <h1 class="text-responsive text-center text-white">Data Journalism</h1>
               </div>
@@ -52,7 +50,7 @@
         </div>
       </div>
       <div class="row">
-        <span class="col-12 m-1">
+        <span class="col-12">
           <hr class="line-double mx-3">
         </span>
       </div>
@@ -63,16 +61,35 @@
       *1 Row
         ~3 Col
           ^Img Card
+          ^Project Description 
         ~9 Col
-          ^Plot Card w/ header & footer - project info
+          ^Plot Card w/ header 
     --------------------------------------------------------------------------->
     <content class="sticky-offset row mt-2">
       <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
         <div class="card img-shadow fluid mb-5">
           <img src="https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" alt="animated newspaper">
           <img src=" https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif" alt="animated newspaper">
-          <div class="card-img-overlay">
-            <h1 class="card-title text-light text-center">Times</h1>
+          <div class="card-img-overlay text-light">
+            <h1 class="card-title text-center">Times</h1>
+            <div class="text_font">
+              <p>
+                This project is implemented to help a major metro paper analyzing the current trends that shape people's
+                lives,
+                as well as creating charts, graphs, and interactive elements to help readers understand the research
+                results.
+              </p>
+              <p>
+                The editor wants to run a series of feature stories about the health risks facing particular
+                demographics. This project
+                provides the first story idea by sifting through information from the
+                <a target="_blank" href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml"
+                  title="US Census Government Website">
+                  U.S. Census Bureau</a> and the Behavioral Risk Factor Surveillance System.
+                The current dataset is based on 2014 ACS 1-year estimates on rates of income, obesity, poverty, etc. by
+                state.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -80,33 +97,20 @@
       <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="card mb-5 shadow d-flex justify-content-center text-navy">
           <div class="card-header text-center border-top-2">
-            <h4>Correlations Discovered Between Health Risk Factors versus Age and Income</h4>
+            <h4>Demographics VS. Health Risk Factors Analysis</h4>
             <input type="hidden" id="xId" value="poverty">
             <input type="hidden" id="yId" value="healthcare">
           </div>
           <!-- Scatter chart begins-->
           <div id="scatter" class="card-body overflow-auto"></div>
           <!-- Scatter chart ends-->
-          <div class="card-footer">
-            <p>
-              This project is implemented to help a major metro paper analyzing the current trends that shape people's lives, 
-              as well as creating charts, graphs, and interactive elements to help readers understand the research results.
-            </p>
-            <p>
-              The editor wants to run a series of feature stories about the health risks facing particular demographics. This project  
-              provides the first story idea by sifting through information from the 
-              <a target="_blank" href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml" title="US Census Government Website">
-                U.S. Census Bureau</a> and the Behavioral Risk Factor Surveillance System.
-                The current dataset is based on 2014 ACS 1-year estimates on rates of income, obesity, poverty, etc. by state.
-            </p>
-          </div>
         </div>
       </div>
     </content>
 
     <footer class="row">
       <div class="col-12 text-center text-white p-1 bg-grad_navy">
-        <i>© 2019 Copyright: Janie Wallace</i>
+        <i>Copyright © 2019 Janie Wallace</i>
       </div>
     </footer>
   </div>
