@@ -13,9 +13,10 @@ The data set included with this project is based on [2014 ACS 1-year estimates](
 
 - - -
 - - -
-## Project Result
+## Project Results
 * [Click here to website](https://janie228.github.io/Journalism_D3/).
 ![journalism.JPG](static/img/journalism.JPG)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 - - -
 
 ## Technologies Used
