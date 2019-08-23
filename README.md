@@ -16,17 +16,17 @@ The data set included with this project is based on [2014 ACS 1-year estimates](
 ## Project Results
 * [![journalism.JPG](static/img/journalism.JPG)](https://janie228.github.io/Journalism_D3/ "Click here for website")
 
-- - -
+-----
 
 ## Technologies Used
 Visual Studio Code, HTML/CSS, Bootstrap 4, D3.JS, CSV dataset 
 
-- - -
+-----
 
 ## Installation/Setup
 * Clone this repo to your computer
 
-- - -
+-----
 ## Project Requirements
 
 ### Level 1: D3 Dabbler
