@@ -12,6 +12,11 @@ The editor wants to run a series of feature stories about the health risks facin
 The data set included with this project is based on [2014 ACS 1-year estimates](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml), but you are free to investigate a different data set. The current data set includes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
 
 - - -
+- - -
+## Project Result
+* [Click here to website](https://janie228.github.io/Journalism_D3/).
+![journalism.JPG](static/img/journalism.JPG)
+- - -
 
 ## Technologies Used
 Visual Studio Code, HTML/CSS, Bootstrap 4, D3.JS, CSV dataset 
@@ -20,12 +25,6 @@ Visual Studio Code, HTML/CSS, Bootstrap 4, D3.JS, CSV dataset
 
 ## Installation/Setup
 * Clone this repo to your computer
-
-- - -
-- - -
-## Results
-* [Click here to website](https://janie228.github.io/Journalism_D3/).
-![journalism.JPG](static/img/journalism.JPG)
 
 - - -
 ## Requirements
