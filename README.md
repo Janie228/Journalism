@@ -1,5 +1,5 @@
 # [Data Journalism](https://janie228.github.io/Journalism_D3/)
-### Demographics Health Risk Factor Analysis
+### Demographics VS. Health Risk Factors Analysis
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 -----
