@@ -17,37 +17,38 @@ html {
 body {
   background-color: #e8eaf6 ;
   margin: 1px;
-  font-family: 'Germania One', cursive;
+  font-family: 'Germania One', cursive, Helvetica, Arial, sans-serif;
 }  
-
+/*------------------------------------------------------------- */
+/*Content */
+.sticky-offset { 
+  padding: 5rem 0rem 0rem 0rem; 
+} 
+.text-navy {
+  color: navy;
+  font-family: 'Germania One', cursive, Helvetica, Arial, sans-serif;
+}
+.text_font {
+  font-size: 1.2rem;
+}
+/*------------------------------------------------------------- */
+/*Header */
 /* Calculate text size based on port */
 .text-responsive {
   font-size: 9vw;
 }
-
-.sticky-offset { 
-  padding: 5rem 0rem 0rem 0rem; 
-} 
-
-.text-navy {
-  color: navy;
-  font-family: 'Germania One', cursive;
+hr.line{
+	border-top: 2px solid #8c8b8b;
 }
-
+hr.line-double {
+	border-top: 5px double #8c8b8b;
+}
+/*------------------------------------------------------------- */
  /*Header & Footer: Gradient Colors */
 .bg-grad_navy {
   /*  background-color:  rgba(0,0,255); For browsers that do not support gradients */
   background-image: linear-gradient(rgba(65, 4, 248, .2), rgb(6, 4, 110, 1)); 
  }
-
- hr.line{
-	border-top: 2px solid #8c8b8b;
-}
-
-
-hr.line-double {
-	border-top: 5px double #8c8b8b;
-}
 
 /*
 ####################################################
