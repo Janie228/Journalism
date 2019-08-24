@@ -15,17 +15,17 @@
   <link rel="stylesheet" href="static/css/chartStyle.css">
 </head>
 
-<body>
+<body class="container-fluid">
   <!-- Header, Content, & Footer Tags -->
-  <div class="container-fluid">
+  <!-- <div class="container-fluid"> -->
     <!-------------------------------------------------------------------------- 
-      # 'fixed-top' Header Tag Hierarchy 
-        ~gradient background
-          ^single-line
-          ^header label
-            -profile icon
-            -header text
-        ~double-line
+      # Header Tag Hierarchy - fixed-top
+        ~Gradient Background
+          ^Single-Line
+          ^Header Content
+            -Profile Icon
+            -Title
+        ~Double-Line
      --------------------------------------------------------------------------->
     <header class="fixed-top">
       <div class="bg-grad_navy">
@@ -33,11 +33,9 @@
           <span class="col-12">
             <hr class="line mb-n4 mx-3">
           </span>
-        </div>
-        <!-- > -->
+        </div>   
         <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
+          <div class="col-12 d-flex justify-content-between">
               <a href="https://janie228.github.io">
                 <img src="static/img/data_scientist_Profile.png" class="rounded m-2" alt="Home" width="40" height="40">
               </a>
@@ -45,7 +43,6 @@
               <div class="w-100">
                 <h1 class="text-responsive text-center text-white">Data Journalism</h1>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -113,7 +110,7 @@
         <i>Copyright © 2019 Janie Wallace</i>
       </div>
     </footer>
-  </div>
+  <!-- </div> -->
 
   <!-- d3 JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
