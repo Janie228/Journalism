@@ -21,6 +21,7 @@ Visual Studio Code, HTML/CSS, Bootstrap 4, D3.JS, CSV dataset
 -----
 ## Installation/Setup
 * Clone this repo to your computer
+* Run the application in Visual Studio Code
 
 -----
 ## Project Requirements
